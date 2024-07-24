@@ -17,6 +17,19 @@ Add the service provider to your `config/app.php`:
 ],
 ```
 
+is laravel version 11.x 
+
+Add the service provider to your `bootstrap/providers.php`:
+
+```
+    return[
+    ...
+    \Nuwave\Lighthouse\WhereConditions\WhereConditionsServiceProvider::class,
+    ...
+]
+```
+
+
 Install the dependency [mll-lab/graphql-php-scalars](https://github.com/mll-lab/graphql-php-scalars):
 
     composer require mll-lab/graphql-php-scalars
